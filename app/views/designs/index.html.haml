@@ -1,1 +1,82 @@
-%h2 Hello World
+//header
+.header
+  .header__inner
+    %h1.site-title
+      %a#top-btn(href="/#") Cresta Design
+    %nav.header-nav
+      %ul.nav-list
+        %li.nav-item
+        %a(href="/#") Concept
+        %li.nav-item
+        %a(href="/#") Service
+        %li.nav-item
+        %a(href="/#") Works
+        %li.nav-item
+        %a(href="/#") Contact
+
+//main
+.main
+  //fv
+  .fv
+    %ul.slider
+      %li= image_tag("fv-bgi_01@2x.jpg", alt: "")
+      %li= image_tag("fv-bgi_02@2x.jpg", alt: "")
+      %li= image_tag("fv-bgi_03@2x.jpg", alt: "")
+    .main-copy
+      %p.en-copy Design for Smile.
+      %p.jp-copy 快適なオフィスをデザインする
+  //concept
+  %section#concept.section-wrapper
+    %h2.section-title CONCEPT
+    .section-inner
+      %p.concept-text“働きたくなる空間”をデザインすることで<br>人々を幸せにする。
+      .concept-about
+        %p.text-about 私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな想いの株式会社Cresta Designだからこそできる空間デザインを提供させていただきます。
+        .concept-img
+        = image_tag("concept-image@2x.jpg", alt: "教室")
+    .section-bottom-text Our Concept
+  //Works
+  %section#service.section-wrapper.bg-works
+    %h2.section-title-right Works
+    %ul.work-list
+      %li.work-item
+        %a(href="/#")
+          .item-img
+          = image_tag("card-img01@2x.jpg", alt: "教室")
+          %p.work-text 新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+      %li.work-item
+        %a(href="/#")
+          .item-img
+          = image_tag("card-img02@2x.jpg", alt: "教室")
+          %p.work-text 新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。 
+      %li.work-item
+        %a(href="/#")
+          .item-img
+          = image_tag("card-img03@2x.jpg", alt: "教室")
+          %p.work-text 新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+    %a.link-btn(href="#!") view more
+    .section-bottom-white Our Works
+  //Service
+  %section#work.section-wrapper
+    %h2.section-title Service
+    %ul.service-list
+      %li.service-item1
+        %a.service-text(href="/#") Hearing
+      %li.service-item2
+        %a.service-text(href="/#") Planning
+      %li.service-item3
+        %a.service-text(href="/#") Direction
+    .section-bottom-text Our Service
+  //Contact
+  %section#contact.section-wrapper.bg-contact
+    %h2.section-title-right Contact
+    .section-inner
+      %p.contact-text お気軽にご相談ください。
+      = link_to contacts_path, class:"link-btn"  do
+        Contact
+    .section-bottom-white Contact us
+.footer
+  %p.footer-copy ©︎crest.design all rights reserved
+
+%script{:src => "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", :type => "text/javascript"}
+%script{:scr => "javascripts/script.js"}

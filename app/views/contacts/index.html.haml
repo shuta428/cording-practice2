@@ -1,0 +1,50 @@
+//header
+.header
+  .header__inner
+    %h1.site-title
+      %a#top-btn(href="/#") Cresta Design
+    .header__inner__nav
+      %ul.nav-list
+        %li.nav-item
+        %a(href="/#") Concept
+        %li.nav-item
+        %a(href="/#") Service
+        %li.nav-item
+        %a(href="/#") Works
+        %li.nav-item
+        %a(href="/#") Contact
+//main
+.main
+  //fv
+  .page-title-wrapper
+    %h2.page-title Contact
+    .page-title-bottom Contact us
+  %form.form-wrapper{:action => ""}
+    %ul.form-list
+      %li.form-item
+        %label.form-label{:for => "form-label"} お問い合わせ内容
+        %ul.checkbox-list
+          %li.checkbox-item
+            %input.checkbox#document{:type => "checkbox"}/
+            %label{:for => "document"} 資料請求
+          %li.checkbox-item
+            %input.checkbox#phone{:type => "checkbox"}/
+            %label{:for => "phone"} お電話でのご相談を希望
+          %li.checkbox-item
+            %input.checkbox#application{:type => "checkbox"}/
+            %label{:for => "application"} 申し込み
+      %li.form-item
+        %label.form-label{:for => "input-name"} 担当者名
+        %input.input-text{:type => "text"}/
+      %li.form-item
+        %label.form-label{:for => "input-tel"} 電話番号
+        %input.input-text{:type => "text"}/
+      %li.form-item
+        %label.form-label{:for => "input-mail"} メールアドレス
+        %input.input-text{:type => "text"}/
+      %li.form-item
+        %label.form-label{:for => "detail"} その他
+        %textarea.textarea{:cols => "30", :name => "", :rows => "10", :type => "text"}
+    %input.submit-btn{:type => "submit", :value => "submit"}/
+.footer
+  %p.footer-copy ©︎crest.design all rights reserved
